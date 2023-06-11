@@ -849,8 +849,7 @@ img {
   border: 2px solid var(--hover-focus-color);
 }
 
-.modal-cheked:checked + .privacy-policy-text span {
-  
+.modal-cheked:checked + .privacy-policy-text .check-icon-default{
   background-color: var(--hover-focus-color);
   border: none; 
   fill: var(--background-light-color);
