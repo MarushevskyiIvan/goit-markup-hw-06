@@ -825,7 +825,7 @@ img {
   margin-bottom: 24px;
 }
 
-.privacy-policy-text >span{
+label >span{
   display: inline-flex;
 }
 
