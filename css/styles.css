@@ -700,8 +700,7 @@ img {
 /* __________________Modal Form_________________ */
 .modal-title {
   color: var(--title-text-color);
-
-  margin-top: 48px;
+  
   margin-bottom: 16px;
 
   font-weight: 500;
