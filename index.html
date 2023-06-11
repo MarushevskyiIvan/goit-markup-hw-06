@@ -635,12 +635,12 @@
 
         <form>
           <div class="modal-wrap">
-            <label class="modal-label-text" for="name">Name</label>
+            <label class="modal-label-text" for="user-name">Name</label>
             <div class="modal-input-wrap">
               <input
                 class="modal-input"
                 type="text"
-                id="name"
+                id="user-name"
                 name="user-name"
                 placeholder=" "
                 required
@@ -685,11 +685,11 @@
             </div>
           </div>
           <div class="coment">
-            <label class="modal-label-text" for="textarea"> Comment </label>
+            <label class="modal-label-text" for="user-comment"> Comment </label>
             <textarea
               class="modal-textarea"
-              name="Comment"
-              id="textarea"
+              name="user-comment"
+              id="user-comment"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -697,10 +697,12 @@
             <input
               class="modal-cheked visually-hidden"
               type="checkbox"
-              id="checkbox"
+              id="user-privacy"
+              name="user-privacy"
+              value="true"
               required
             />
-            <label for="checkbox" class="privacy-policy-text">
+            <label for="user-privacy" class="privacy-policy-text">
               <span class="check-icon-def">
                 <svg class="modal-checked-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-property-checked"></use>

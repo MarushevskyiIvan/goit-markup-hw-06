@@ -593,7 +593,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -619,7 +619,6 @@ img {
 .subscribe-icon {
   margin-left: 16px;
 }
-
 
 /* ________________Modal_______________ */
 
@@ -698,11 +697,10 @@ img {
   pointer-events: none;
 }
 
-
 /* __________________Modal Form_________________ */
 .modal-title {
   color: var(--title-text-color);
-  
+
   margin-bottom: 16px;
 
   font-weight: 500;
@@ -720,7 +718,7 @@ img {
   letter-spacing: 0.04em;
 }
 
-.modal-wrap{
+.modal-wrap {
   margin-bottom: 8px;
 }
 
@@ -758,7 +756,7 @@ img {
   top: 50%;
 
   transform: translateY(-50%);
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .coment {
@@ -766,7 +764,14 @@ img {
 }
 
 .modal-textarea {
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
+
   resize: none;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
 
   width: 100%;
   height: 120px;
@@ -823,24 +828,25 @@ img {
 
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  display: flex;
-
+  
+  display: inline-flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-cheked:focus + .privacy-policy-text> .check-icon-def{
+.modal-cheked:focus + .privacy-policy-text > .check-icon-def {
   border: 2px solid var(--hover-focus-color);
 }
 
 .modal-cheked:checked + .privacy-policy-text span {
+  border: none; 
   background-color: var(--hover-focus-color);
-  fill: var(--third-text-color);
-
-  border: 0;
+  fill: var(--background-light-color);
 }
-
 
 .policy-link {
   color: var(--logo-btn-color);
@@ -864,16 +870,14 @@ img {
 
   display: block;
 
-  width: 169px;
+  min-width: 169px;
   height: 56px;
   margin: auto;
   margin-bottom: 24px;
-  
 
   border-radius: 4px;
   border: 0;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover,
@@ -982,5 +986,3 @@ img {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
 }
-
-
